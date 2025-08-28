@@ -2,7 +2,7 @@
 
 ### [▶️ Watch the Live Video Demo Here](demo/alert-hub-demo.mp4)
 
-[![AlertHub Video Demo](screenshots/demo-thumbnail.png)](demo/alert-hub-demo.mp4)
+[![AlertHub Video Demo](screenshots/01-homepage.png)](demo/alert-hub-demo.mp4)
 
 **AlertHub** is a comprehensive, real-time web application designed to solve the critical problem of delayed and scattered emergency information. It provides a single, reliable source of truth for citizens and emergency responders during crises like floods, earthquakes, and fires.
 
