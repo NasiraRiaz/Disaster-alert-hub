@@ -47,7 +47,7 @@ To bring this project to life, I performed the following key actions:
 
 To run this project locally:
 
-1.  Clone the repository: `git clone <your-repo-url>`
+1.  Clone the repository:`git clone https://github.com/NasiraRiaz/Disaster-alert-hub.git`
 2.  Navigate to the project directory: `cd disaster-alert-hub`
 3.  Install dependencies: `npm install`
 4.  Create a `firebase.js` file in the `src/` directory and add your Firebase project configuration.
