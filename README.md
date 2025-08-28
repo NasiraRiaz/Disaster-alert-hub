@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# AlertHub: A Community Disaster Alert & Safety Hub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### [▶️ Watch the Live Video Demo Here](demo/alert-hub-demo.mp4)
 
-## Available Scripts
+[![AlertHub Video Demo](screenshots/demo-thumbnail.png)](demo/alert-hub-demo.mp4)
 
-In the project directory, you can run:
+**AlertHub** is a comprehensive, real-time web application designed to solve the critical problem of delayed and scattered emergency information. It provides a single, reliable source of truth for citizens and emergency responders during crises like floods, earthquakes, and fires.
 
-### `npm start`
+This project was developed as a practical, social-good solution using a modern tech stack to deliver a secure, responsive, and user-friendly experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **Live Screenshots**
 
-### `npm test`
+| Homepage | Login Screen |
+| :---: | :---: |
+| ![Homepage](screenshots/01-homepage.png) | ![Login Page](screenshots/02-loginpage.png) |
+| **Dashboard** | **Disaster Help & Preparedness** |
+| ![Dashboard](screenshots/03-dashboard.png) | ![Disaster Help Page](screenshots/04-disaster-help.png) |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### **Project Implementation in Detail**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To bring this project to life, I performed the following key actions:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*   **I set up a React frontend using Create React App** to build a fast, component-based, and responsive user interface for the entire application.
+*   **I built the backend and database using Firebase.** I chose Firebase for its powerful real-time capabilities (Firestore) and built-in secure user management (Authentication), which were perfect for the project's requirements.
+*   **I architected a full multi-page website using React Router.** This allowed me to create a professional site structure with a public-facing homepage, a secure login/signup portal, and several protected pages for authenticated users.
+*   **I built a complete user authentication flow with Firebase Authentication**, allowing users to sign up for a new account and log in securely. My code handles errors for incorrect passwords, weak passwords, and existing users.
+*   **I created a "Protected Routes" system.** This ensures that critical pages like the Dashboard and Disaster Help are only accessible to users who have successfully logged in.
+*   **I developed a real-time "Live Alerts" feed.** By using Firestore's `onSnapshot` listener, I made it so new disaster alerts created in the database appear on the user's screen instantly without needing a page refresh.
+*   **I integrated an interactive map using Leaflet.js.** The map fetches and displays both **safe zones** (hospitals, shelters) and **danger zones** (colored circles) from two separate Firebase collections.
+*   **I built a functional "Emergency Reporting" form.** This form uses the browser's Geolocation API to capture a user's precise coordinates and saves the complete report to the database.
+*   **I implemented a simulated SMS notification system.** I built a client-side listener that watches for new, high-severity alerts and triggers a browser pop-up and a database log, successfully demonstrating the core logic of an automated notification system without requiring a paid backend plan.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### **Tech Stack**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+*   **Frontend:** React, React Router, CSS3
+*   **Backend & Database:** Firebase (Firestore & Authentication)
+*   **Mapping:** Leaflet.js
+*   **Icons:** React Icons
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Setup & Installation**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run this project locally:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  Clone the repository: `git clone <your-repo-url>`
+2.  Navigate to the project directory: `cd disaster-alert-hub`
+3.  Install dependencies: `npm install`
+4.  Create a `firebase.js` file in the `src/` directory and add your Firebase project configuration.
+5.  Start the development server: `npm start`

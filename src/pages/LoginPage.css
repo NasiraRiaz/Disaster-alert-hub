@@ -1,0 +1,155 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 160px);
+  padding: 40px 20px;
+  position: relative;
+  background-image: url('https://img.freepik.com/premium-photo/terrible-forest-fires-annual-natural-disasters-forests-are-burning-all-trees-are-fire-trunks_124507-13893.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.login-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.welcome-text {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.welcome-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffc107;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.login-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.login-btn,
+.signup-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.login-btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.signup-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  opacity: 0.9;
+}
+
+.separator {
+  text-align: center;
+  margin: 20px 0;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.toggle-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.toggle-text span {
+  color: var(--primary-color);
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #d32f2f;
+  background-color: #ffebf0;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}

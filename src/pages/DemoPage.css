@@ -1,0 +1,53 @@
+/* src/pages/DemoPage.css */
+.demo-page {
+  padding: 60px 20px;
+  background-color: #f4f7f6;
+  text-align: center;
+}
+
+.demo-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.demo-container h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.demo-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- THE FINAL, WORKING VIDEO STYLE --- */
+.demo-video-player {
+  width: 100%; /* Make the video responsive */
+  max-width: 900px; /* Give it a max width */
+  height: auto;
+  display: block;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-radius: 12px;
+}
+
+.demo-button {
+  background-color: #ff9800;
+  color: var(--dark-text);
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+}
+
+.demo-button:hover {
+  background-color: #f57c00;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,314 @@
+.hero-section {
+  padding: 120px 0;
+  position: relative;
+  text-align: center;
+  
+  background-image: url('https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8); 
+}
+
+.hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 50px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-line {
+  color: #f57c00; 
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.heading {
+  margin-bottom: 24px;
+  font-size: 52px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--dark-text); 
+}
+
+.subtitle {
+  margin-bottom: 35px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #555; 
+}
+
+.hero-button {
+  background-color:#f57c00; 
+  color: #ffffff; 
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero-button:hover {
+  background-color: #0d47a1c9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.features-section {
+  padding: 80px 50px;
+  background-color: #f4f7f6;
+  text-align: center;
+}
+.features-heading {
+  font-size: 2.5rem;
+  color: var(--dark-text);
+  margin-bottom: 50px;
+}
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.feature-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  transition: all 0.3s ease-in-out;
+}
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.feature-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.feature-card h3 {
+  font-size: 1.5rem;
+  color: var(--dark-text);
+  margin-bottom: 15px;
+}
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.testimonials-section {
+  padding: 80px 50px;
+  background-color: #fff;
+}
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.testimonials-heading {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  text-align: left;
+}
+.testimonial-card {
+  background-color: #f4f7f6;
+  padding: 30px;
+  border-radius: 12px;
+  border-top: 5px solid #ff9800;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.testimonial-quote-icon {
+  font-size: 2.5rem;
+  color: #ff9800;
+  margin-bottom: 20px;
+}
+.testimonial-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+.testimonial-author-info {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+.testimonial-author {
+  font-weight: 700;
+  color: var(--dark-text);
+  margin: 0;
+}
+.testimonial-title {
+  font-size: 0.9em;
+  color: #777;
+  margin: 5px 0 0;
+}
+
+/* --- CASE STUDY SECTION STYLES --- */
+.case-study-section {
+  padding: 80px 50px;
+  background-color: #0d47a1;
+}
+.case-study-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.case-study-heading, 
+.case-study-subheading,
+.case-study-section .top-line {
+  color: #fff;
+}
+.case-study-heading {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.case-study-subheading {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  opacity: 0.9;
+}
+.case-study-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  display: flex;
+  text-align: left;
+  padding: 40px;
+  gap: 30px;
+}
+.case-study-column {
+  flex: 1;
+}
+.case-study-column:not(:first-child) {
+  border-left: 1px solid #eee;
+  padding-left: 30px;
+}
+.case-study-column h4 {
+  color: #ff9800;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+}
+.case-study-column p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- SUBSCRIBE SECTION STYLES --- */
+.subscribe-section {
+  padding: 60px 50px;
+  background-color: #e3f2fd;
+}
+.subscribe-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.subscribe-text {
+  flex: 2;
+  min-width: 300px;
+}
+.subscribe-text h3 {
+  font-size: 1.8rem;
+  color: var(--dark-text);
+  margin: 0 0 10px 0;
+}
+.subscribe-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+.subscribe-form {
+  flex: 1;
+  min-width: 300px;
+}
+.subscribe-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #333;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.subscribe-button {
+  background-color: #ff9800;
+  color: var(--dark-text);
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.subscribe-button:hover {
+  background-color: #f57c00;
+}
+.subscribe-success-message {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 991px) {
+  .heading { font-size: 40px; }
+  .subtitle { font-size: 18px; }
+}
